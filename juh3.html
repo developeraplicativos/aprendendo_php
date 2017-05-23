@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>@bijullyacessorios</title>
+<style>
+	body{
+
+	}
+	img{
+		margin: 0 auto;
+		width: 400px;
+		height: 400px;
+
+	}
+	#icon{
+		width:	300px;
+		height: 90px;
+	}
+	section{
+		text-align: right;
+	}
+	ul{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	li{
+		list-style-type: none;
+		padding-left: -100px;
+		width: 150px;
+		height: 400px;
+		overflow: hidden;
+		display: inline-block;
+	}
+	#foto{
+		width: 400px;
+		height: 400px;
+	}
+	.fotodif:hover li#foto{
+		border: 1px solid blue;
+	}
+	li:hover {
+		width: 400px;
+		height: 400px;
+
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".fotodif").on("mouseover",function(){
+			$("#foto").css("width","170px");
+			$(".fotodif").css("transition","width 1s");
+		});
+		$(".fotodif").on("mouseout",function(){
+			//$("#foto").css("width","400px");
+			$("#foto").css({	width: "400px",
+								transition: "width 1s"});
+		});
+	});
+</script>
+</head>
+<body>
+<section>
+	O que é Bijully?
+É uma marca de acessórios feitos com amor e dedicação por uma apaixonada por Artes manuais, que decidiu compartilhar sua arte e talento com outras pessoas.
+<img id="icon" src="imagem/bijully icon.jpg" />
+</section>
+<ul>
+	<li class="fotodif">
+		<a>
+			<img src="imagem/brinco1.jpg" />
+		</a>
+	</li><li class="fotodif">
+		<a>
+			<img src="imagem/colar1.jpg" />
+		</a>
+	</li><li class="fotodif">
+		<a>
+			<img src="imagem/brinco2.jpg" />
+		</a>
+	</li><li class="fotodif">
+		<a>
+			<img src="imagem/pulseira1.jpg" />
+		</a>
+	</li><li id="foto">
+		<a>
+			<img src="imagem/pulseira4.jpg" />
+		</a>
+	</li>
+</ul>
+Por que comprar os acessórios Bijully?
+Por que é uma marca que tem produtos personalizados, de excelente qualidade, garantidos pela criadora das peças
+
+</body>
+</html>
